@@ -4,7 +4,7 @@
   "description": "Portfolio project",
   "main": "index.ts",
   "scripts": {
-    "start": "npm run build && node build/index.js",
+    "start": "npm i && npm run build && node build/index.js",
     "start:dev": "nodemon",
     "start:debug": "nodemon --config nodemon-debug.json",
     "build": "rimraf ./build && tsc",
