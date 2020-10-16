@@ -7,7 +7,6 @@
     "start": "npm i && npm run build && node build/index.js",
     "start:dev": "nodemon",
     "start:debug": "nodemon --config nodemon-debug.json",
-    "rimraf": "./node_modules/rimraf/bin.js",
     "build": "rimraf ./build && tsc",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "test": "echo \"Error: no test specified\" && exit 1",
