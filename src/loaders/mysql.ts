@@ -8,10 +8,10 @@ export class MysqlConnection {
 
   private constructor() {
     this.cnx = createConnection({
-      host: 'localhost', // address of the server
-      user: 'root', // username
-      password: 'anaDondel',
-      database:  'portfolio_db',
+      host: process.env.DB_HOST, // address of the server
+      user: process.env.DB_USERNAME, // username
+      password: process.env.DB_USER_PASSWORD,
+      database:  process.env.DB_DATABASE,
     });
   }
 
