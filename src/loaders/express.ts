@@ -32,7 +32,7 @@
       resp.send('hello from server');
     });
     app.get('/api/tkn', (req, resp) => {
-      resp.send({token: process.env.GITHUB_TOKEN});
+      resp.send({token: process.env.GITHUB});
     });
 
     // ...More middlewares
